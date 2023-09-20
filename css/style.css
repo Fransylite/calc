@@ -30,8 +30,42 @@ input {
     width: fit-content;
 }
 
+input:hover {
+    background-color: #7c7cec;
+    transition: all ease-in-out 200ms;
+}
+
 #result {
     width: fit-content;
     display: block;
     margin: 10px 30px;
+}
+
+@media  only screen and (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        width: auto;
+        position: relative
+      }
+
+    .main {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        row-gap: 10px;
+        align-items: center;
+    }
+
+    input {
+        text-align: center;
+        width: 80px;
+        height: 30px;
+    }
+
+    #clear {
+        width: 150px;
+    }
 }
